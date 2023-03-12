@@ -4,6 +4,8 @@
 # Smith-Waterman #
 ##################
 
+mkdir -p results
+
 java -cp dist/FasterGC.jar:extlibs/jargs.jar:extlibs/commons-io-1.4.jar Test.TestSWServer -m matrices/blosum20x20 -a -n 30 1>results/swserverout 2>results/swservererr &
 
 sleep 0.8
