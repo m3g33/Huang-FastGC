@@ -28,18 +28,30 @@
   </target>
 
   <target name="runlevenshtein" depends="archive">
-    <exec executable="./runlevenshtein"/>
+    <exec executable="./runlevenshtein.sh"/>
+  </target>
+  <target name="runlevenshtein_WIN" depends="archive">
+    <exec executable="./runlevenshtein.bat"/>
   </target>
 
   <target name="runsw" depends="archive">
-    <exec executable="./runsw"/>
+    <exec executable="./runsw.sh"/>
+  </target>
+  <target name="runsw_WIN" depends="archive">
+    <exec executable="./runsw.bat"/>
   </target>
 
   <target name="runhamming" depends="archive">
-    <exec executable="./runhamming"/>
+    <exec executable="./runhamming.sh"/>
+  </target>
+  <target name="runhamming_WIN" depends="archive">
+    <exec executable="./runhamming.bat"/>
   </target>
 
   <target name="runaes" depends="archive">
-    <exec executable="./runaes"/>
+    <exec executable="./runaes.sh"/>
+  </target>
+  <target name="runaes_WIN" depends="archive">
+    <exec executable="./runaes.bat"/>
   </target>
 </project>
