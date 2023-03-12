@@ -41,7 +41,7 @@ class TestAESEncryptClient {
 
 	autogen = (Boolean) parser.getOptionValue(optionAuto, false);
 	ProgClient.serverIPname = (String) parser.getOptionValue(optionServerIPname, new String("localhost"));
-	Program.iterCount = ((Integer) parser.getOptionValue(optionIterCount, new Integer(1))).intValue();
+	Program.iterCount = (Integer) parser.getOptionValue(optionIterCount, 1);
     }
 
     static void generateData() throws Exception {

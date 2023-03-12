@@ -43,9 +43,9 @@ class TestSWClient {
 	clientCodons = (String) parser.getOptionValue(optionCodons, new String("A"));
 	matrixFile = (String) parser.getOptionValue(optionMatrixFile, new String("matrices/Simple"));
 	autogen = (Boolean) parser.getOptionValue(optionAuto, false);
-	n = ((Integer) parser.getOptionValue(optionCodonLength, new Integer(100))).intValue();
+	n = (Integer) parser.getOptionValue(optionCodonLength, 100);
 	ProgClient.serverIPname = (String) parser.getOptionValue(optionServerIPname, new String("localhost"));
-	Program.iterCount = ((Integer) parser.getOptionValue(optionIterCount, new Integer(1))).intValue();
+	Program.iterCount = (Integer) parser.getOptionValue(optionIterCount, 1);
     }
 
     static void generateData() throws Exception {

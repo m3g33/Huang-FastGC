@@ -36,9 +36,9 @@ class TestHammingClient {
 	    System.exit(2);
 	}
 
-	n = ((Integer) parser.getOptionValue(optionBitLength, new Integer(100))).intValue();
+	n = (Integer) parser.getOptionValue(optionBitLength, 100);
 	ProgClient.serverIPname = (String) parser.getOptionValue(optionServerIPname, new String("localhost"));
-	Program.iterCount = ((Integer) parser.getOptionValue(optionIterCount, new Integer(10))).intValue();
+	Program.iterCount = (Integer) parser.getOptionValue(optionIterCount, 10);
     }
 
     private static void generateData() throws Exception {

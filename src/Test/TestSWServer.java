@@ -41,7 +41,7 @@ class TestSWServer {
 	serverCodons = (String) parser.getOptionValue(optionCodons, new String("A"));
 	matrixFile = (String) parser.getOptionValue(optionMatrixFile, new String("matrices/blosum20x20"));
 	autogen = (Boolean) parser.getOptionValue(optionAuto, false);
-	n = ((Integer) parser.getOptionValue(optionCodonLength, new Integer(100))).intValue();
+	n = (Integer) parser.getOptionValue(optionCodonLength, 100);
     }
 
     static void generateData() throws Exception {

@@ -40,8 +40,8 @@ class TestEDServer {
 	// dna = (String) parser.getOptionValue(optionDNA, new String("AGCT"));
 	// EditDistanceServer.L = ((Integer) parser.getOptionValue(optionL, 5)).intValue();
 	autogen = (Boolean) parser.getOptionValue(optionAuto, false);
-	n = ((Integer) parser.getOptionValue(optionDNALength, new Integer(100))).intValue();
-	EditDistanceCommon.sigma = ((Integer) parser.getOptionValue(optionSigma, new Integer(2))).intValue();
+	n = (Integer) parser.getOptionValue(optionDNALength, 100);
+	EditDistanceCommon.sigma = (Integer) parser.getOptionValue(optionSigma, 2);
     }
 
     private static void generateData() throws Exception {
