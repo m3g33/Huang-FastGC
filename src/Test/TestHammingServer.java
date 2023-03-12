@@ -50,5 +50,6 @@ class TestHammingServer {
 	    
 	HammingDistanceServer hammingserver = new HammingDistanceServer(bits, n);
 	hammingserver.run();
+	System.out.println("Total time elapsed: " + StopWatch.allTime / 1000d);
     }
 }

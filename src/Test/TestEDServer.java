@@ -59,5 +59,6 @@ class TestEDServer {
 
 	EditDistanceServer edserver = new EditDistanceServer(dna, n);
 	edserver.run();
+	System.out.println("Total time elapsed: " + StopWatch.allTime / 1000d);
     }
 }

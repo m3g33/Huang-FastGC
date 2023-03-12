@@ -53,5 +53,6 @@ class TestHammingClient {
 
 	HammingDistanceClient hammingclient = new HammingDistanceClient(bits, n);
 	hammingclient.run();
+	System.out.println("Total time elapsed: " + StopWatch.allTime / 1000d);
     }
 }

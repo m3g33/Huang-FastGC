@@ -18,6 +18,8 @@ public class StopWatch {
     public static CountingOutputStream cos = null;
     public static CountingInputStream  cis = null;
 
+	public static long allTime = 0;
+
     public static void start() {
         lastSnapshotTime = startTime = System.currentTimeMillis();
 
@@ -45,7 +47,10 @@ public class StopWatch {
     }
 
     public static void taskTimeStamp(String task) {
-	System.out.println("Elapsed time (ms) on " + task + ": " + getSegmentedElapsedTime() + " (" + getOutputUsage() + ", " + getInputUsage() + ")");
+	// System.out.println("Elapsed time (ms) on " + task + ": " + getSegmentedElapsedTime() + " (" + getOutputUsage() + ", " + getInputUsage() + ")");
+		long temp = getSegmentedElapsedTime();
+		System.out.println("Elapsed time (ms) on " + task + ": " + temp + " (" + getOutputUsage() + ", " + getInputUsage() + ")");
+		allTime += temp;
     }
 
     public static long getElapsedTime() {

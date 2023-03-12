@@ -60,5 +60,6 @@ class TestAESEncryptClient {
 
 	AESEncryptClient aesEncryptClient = new AESEncryptClient(msg, 4);
 	aesEncryptClient.run();
+	System.out.println("Total time elapsed: " + StopWatch.allTime / 1000d);
     }
 }

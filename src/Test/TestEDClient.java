@@ -59,5 +59,6 @@ class TestEDClient {
 
 	EditDistanceClient edclient = new EditDistanceClient(dna, n);
 	edclient.run();
+	System.out.println("Total time elapsed: " + StopWatch.allTime / 1000d);
     }
 }

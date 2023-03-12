@@ -69,5 +69,6 @@ class TestSWClient {
 	System.out.println(clientCodons);
 	SmithWatermanClient edclient = new SmithWatermanClient(clientCodons);
 	edclient.run();
+	System.out.println("Total time elapsed: " + StopWatch.allTime / 1000d);
     }
 }

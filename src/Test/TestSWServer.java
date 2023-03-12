@@ -66,5 +66,6 @@ class TestSWServer {
 	System.out.println(serverCodons);
 	SmithWatermanServer edserver = new SmithWatermanServer(serverCodons);
 	edserver.run();
+	System.out.println("Total time elapsed: " + StopWatch.allTime / 1000d);
     }
 }

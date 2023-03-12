@@ -59,5 +59,6 @@ class TestAESEncryptServer {
 
 	AESEncryptServer aesEncryptServer = new AESEncryptServer(key, 4);
 	aesEncryptServer.run();
+	System.out.println("Total time elapsed: " + StopWatch.allTime / 1000d);
     }
 }
