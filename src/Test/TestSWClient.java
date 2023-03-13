@@ -4,11 +4,13 @@ package Test;
 
 import java.util.*;
 import java.security.SecureRandom;
+import java.util.concurrent.TimeUnit;
 
 import jargs.gnu.CmdLineParser;
 
 import Utils.*;
 import Program.*;
+import org.apache.commons.lang3.SystemUtils;
 
 class TestSWClient {
     static String clientCodons;
@@ -70,5 +72,7 @@ class TestSWClient {
 	SmithWatermanClient edclient = new SmithWatermanClient(clientCodons);
 	edclient.run();
 	System.out.println("Total time elapsed: " + StopWatch.allTime / 1000d);
+	if(SystemUtils.IS_OS_WINDOWS)
+		TimeUnit.SECONDS.sleep(10);
     }
 }
